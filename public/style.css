@@ -1,0 +1,409 @@
+@font-face {
+    font-family: 'Vivaldi';
+    src: url(/public/Vivaldi.woff2) format('woff2'),
+        url(/public/Vivaldi.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+:root{
+    
+    --primary-color: #302c2c;
+    --secondary-color: aliceblue;
+    --font-family: 'Vivaldi', Arial, sans-serif;
+}
+
+/*Social Media*/
+.whatsapp-btn-container {
+    position: fixed;
+    right: 10px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+/**?/ /*facebook*/
+.facebook-btn-container {
+    position: fixed;
+    right: 60px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.facebook-btn-container .facebook-btn {
+    font-size: 48px;
+    color: #3b5998;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.facebook-btn-container .facebook-btn:hover {
+    transform: scale(1.2);
+}
+
+.facebook-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #3b5998;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.facebook-btn-container .facebook-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+
+/*Social Media End*/
+
+#para{
+    padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+
+#body2{
+    background-image: url("/public/bodyBackground.jpg");
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#alsobody2{
+
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+
+
+.my-float{
+	margin-top:16px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+#headText {
+
+    font-family: 'Vivaldi';
+    color: var(--primary-color);
+
+    background-color: #ffffff;
+}
+
+.mainImg {
+    width: 30rem;
+    height: auto;
+    float: left;
+    margin-right: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.borderNav {
+    border: var(--primary-color) 1px;
+    border-style: solid;
+}
+.mainImgRight {
+    width: 30rem;
+    height: auto;
+    float: right;
+    margin-right: 1rem;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+.imgOption {
+    width: 20rem;
+    height: auto;
+    float: left;
+
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#storePage {
+width: 100%;
+height: auto;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+.h2ImgRight{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+body {
+
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+
+
+#h1Head{
+    text-align: center;
+    font-size: 3rem;
+}
+.h2Head{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#firstTab {
+    border-left: 2px;
+    border-style: solid;
+    border-color: white;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+
+.chat{
+    padding-top: 1em;
+    margin-top: 4em;
+
+    margin-left: 10em;
+    margin-right: 10em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+h4 {
+
+    font-size: 0.7em;
+    font-family: "Playfair Display", serif;
+}
+
+
+.optionBox {
+    border: #302c2c 0.5px;
+    border-style: solid;
+    
+    margin-left: 20em;
+    margin-right: 20em;
+} 
+
+.wrap{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.paddingLeft{
+    padding-left: 1em;
+}
+
+.constult{
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: white;
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+
+}
+
+.headOptionBox{
+    
+    font-size: 1.2em;
+    text-align: start;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+
+}
+
+.boxPadding {
+    padding: 2rem;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.chatCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bodyHead {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#collagePhoto {
+    width: 25rem;
+    height: auto;
+
+}
+
+
+.nav-link{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    
+    border-right: 2px;
+    border-style: solid;
+    border-color: white;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+#tabs {
+    background-color: var(--primary-color);
+    padding: 1em;
+    
+}
+
+#head2 {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+
+#storeGif{
+    width: 60%;
+    padding-bottom: 1rem;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+    width: 14em;
+    
+}
+
+.container1{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+#head2{
+    border: 0px;
+    margin: 1em;
+    margin: 1em;
+    padding-bottom: 2px;
+}
+
+#subHead1 {
+    font-size: 2.5em;
+    font-family: "Playfair Display", serif;
+}
+
+#subHead2 {
+    font-family: "Playfair Display", serif;
+}
+
+#body1 {
+     margin-left: 2em;
+    margin-right: 2em; 
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Other Tabs on Hover*/
+#head2:hover{
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    padding-bottom: 1px;
+}
+
+
+
+/* Media query for phone */
+@media only screen and (max-width: 600px) {
+.nav-link{
+    font-size: 0.5em;
+}
+.optionBox{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.imgOption{
+    width: 5rem;
+}
+
+
+
+}
+
+/* Media query for tablet */
+@media only screen and (min-width: 601px) and (max-width: 1315px) {
+    .optionBox{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
