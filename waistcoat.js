@@ -1,7 +1,7 @@
 const images = document.getElementById('img');
 let array = []
 
-fetch('http://localhost:3000/waistcoat')
+fetch('https://api.almarahclassicfit.com/waistcoat')
     .then(response => response.json())
     .then(data => {
         array = data;

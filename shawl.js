@@ -1,7 +1,7 @@
 const images = document.getElementById('img');
 let array = []
 
-fetch('http://localhost:3000/shawls')
+fetch('https://api.almarahclassicfit.com/shawls')
     .then(response => response.json())
     .then(data => {
         array = data;
