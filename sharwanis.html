@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <title>Almarah Classic Fit</title>
+    <link rel="icon" type="image/x-icon" href="/public/logo.ico">
     <!-- Add Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
-    <!--Playfair Display Font-->
+    
     <!--Playfair Display Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,29 +16,41 @@
     
     <!--Whatsapp Button-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<<<<<<< Updated upstream
+=======
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <meta name="description" content="Almarah Classic Fit's showcase of Sherwani Collection">
+    <meta name="description" content="Almarah Classic Fit's showcase of Sharwanis Collection">
+>>>>>>> Stashed changes
 </head>
 <body>
     <div class="whatsapp-btn-container">
         <a class="whatsapp-btn" href="https://wa.me/+19054974684"><i class="fab fa-whatsapp"></i></a>
-        <span style="font-size: 13px;" alt="whatsapp" class="text-center">Whatsapp Us</span>
+        <span style="font-size: 13px;" class="text-center">Whatsapp Us</span>
     </div>
 
     <div class="facebook-btn-container">
         <a class="facebook-btn" href="https://m.me/100930819281715"><i class="fab fa-facebook"></i></a>
-        <span style="font-size: 13px;" alt="facebook" class="text-center">Facebook Us</span>
+        <span style="font-size: 13px;" class="text-center">Facebook Us</span>
     </div>
 
-    <div  id="headText">
-        <div id="h1Head">Almarah Classic Fit</div>
-        <ul id="tabs" class="nav justify-content-center">
+    <div id="headText"></div>
+        <div id="titlePadding" class="row align-items-center">
+            <div class="col-auto">
+                <img id="menuBtn" src="/public/menu.png" alt="Menu" class="d-md-none" style="width:40px; height:40px; margin: 1em auto; display: block; cursor:pointer;">
+            </div>
+            <div class="col" style="padding-right: 5em;">
+                <div class="title">Almarah Classic Fit</div>
+            </div>
+
+
+        </div>
+        <ul id="tabs" class="nav justify-content-center d-none d-md-flex">
             <li id="firstTab" class="nav-item">
-                <a  class="nav-link" href="/index.html">Home Page</a>
+                <a class="nav-link" href="/index.html">Home Page</a>
             </li>
             <li class="nav-item">
-                <a  class="nav-link" href="/sharwanis.html">Sharwanis Collection</a>
+                <a class="nav-link" href="/sharwanis.html">Sharwanis Collection</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="/kurtaCollection.html">Kurta Collection</a>
@@ -61,29 +74,89 @@
                 <a class="nav-link" href="/turban.html">Turban</a>
             </li>
         </ul>
-        <ul class="nav">
+        <ul class="nav d-none d-md-flex">
             <li id="contact" class="nav-item">
-                <a id="head2"  class="nav-link" href="https://wa.me/+19054974684">Contact</a>
+                <a id="head2" class="nav-link" href="https://wa.me/+19054974684">Contact</a>
             </li>
             <li id="location" class="nav-item">
                 <a id="head2" class="nav-link" href="/location.html">Location</a>
             </li>
         </ul>
+        <!-- Mobile/Tablet Menu Button -->
+        
     </div>
+
+    <!-- Modal for mobile/tablet navigation -->
+    <div class="modal fade" id="mobileMenuModal" tabindex="-1" aria-labelledby="mobileMenuLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content mobileNavBody">
+          
+          <div class="modal-body">
+            <ul class="nav flex-column">
+                <li class="nav-item mobileNav"><a class="nav-link" href="/index.html">Home Page</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/sharwanis.html">Sharwanis Collection</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/kurtaCollection.html">Kurta Collection</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/kurtaShalwar.html">Kurta Shalwars</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/shawl.html">Shawls</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/waistcoat.html">Waistcoats</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/princecoat.html">Princecoat</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/shoes.html">Shoes</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/turban.html">Turban</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="https://wa.me/+19054974684">Contact</a></li>
+                <li class="nav-item mobileNav"><a class="nav-link" href="/location.html">Location</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Detect mobile/tablet
+        function isMobileOrTablet() {
+            return window.innerWidth < 768;
+        }
+        // Show menu button only on mobile/tablet
+        document.getElementById('menuBtn').style.display = isMobileOrTablet() ? 'block' : 'none';
+        window.addEventListener('resize', function() {
+            document.getElementById('menuBtn').style.display = isMobileOrTablet() ? 'block' : 'none';
+        });
+        // Show modal on button click
+        document.getElementById('menuBtn').addEventListener('click', function() {
+            var modal = new bootstrap.Modal(document.getElementById('mobileMenuModal'));
+            modal.show();
+        });
+    });
+    </script>
     
     <!-- Add your content here -->
-    <h2 class="subHead1">Sherwani Showcase</h2>
+<<<<<<< Updated upstream
+    <h2 class="subHead1">Sharwanis Showcase</h2>
     <br><br><br>
+
     <div class="row" id="obj">
-        <div class="col" >
-            <div class="card" ></div>
+        <div class="col">
+            <div class="card">
+            <img src="public/sherwani/Imgur Album/1 - T7uasp6.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/2 - 6kRLzLn.png" class="card-img-top" alt="sherwani">
+=======
+    <h2 id="subhead">Sharwanis Showcase</h2>
+    <br><br><br>
+
+    <div id="mobileResolution"></div>
+    <div class="row" id="obj">
+
+
             <div class="container" ></div>
 
             <div id="img" class="row">
                 <!-- images found under this div element -->
                 
 
-            </div>
+
         </div>
     </div>
     
@@ -94,19 +167,191 @@
     <div  class="container-fluid"></div>
         <div class="row">
             <div class="col text-center text-light">
-                &copy; 2024 Almarah Classic Fit. All rights reserved.
+                &copy; 2023 - 2025 ALMARAH CLASSIC-FIT INC.
+>>>>>>> Stashed changes
             </div>
         </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/3 - 6NsGRDY.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/4 - nm2wSlW.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/5 - Mkwk2h6.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/6 - 5DQXtw7.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/7 - ateFK4c.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/8 - KzXnUm6.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/9 - DKJs3xR.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/10 - XeEypL3.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/11 - JyLTDnC.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/12 - otw8Zi6.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/13 - 3ugQgFQ.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/14 - JOyCrHZ.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/15 - DIJI1hy.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="public/sherwani/Imgur Album/16 - 3VaBlir.png" class="card-img-top" alt="sherwani">
+            </div>
+        </div>
+
+
+        
+
+
+
+       
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (1).jpg" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (1).png" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (2).jpg" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (2).png" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (3).jpg" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (3).png" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (4).jpg" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (4).png" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (5).jpg" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (5).png" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (6).png" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="/public/sherwani/newSherwani (7).png" class="card-img-top" alt="kurta shalwar selection">
+            </div>
+        </div>
+        >
+
+
+
+
+
+
+
     </div>
-</footer>
-                            
-                            
+    
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+      
+<br>
+    
+
+    <br>
+    <footer class="footer" style="background-color: #302c2c; padding-top: 1em; padding-bottom: 1em;">
+        <div  class="container-fluid"></div>
+            <div class="row">
+                <div class="col text-center text-light">
+                    &copy; 2024 Almarah Classic Fit. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
 </body>
-<script src="sharwanis.js"></script>
+<<<<<<< Updated upstream
 <style>
-.sherwani{
-    width: 20em;
-    height: auto;
+#obj{
+    padding-right: 10em;
+    padding-left: 10em;
 }
 
 .subHead1 {
@@ -115,10 +360,13 @@
     text-align: center;
 }
 
-#obj {
-    padding-left: 10rem;
-    padding-right: 10rem;
-}
+
 
 </style>
+=======
+<script src="sharwanis.js"></script>
+<script src="menu.js"></script>
+<script src="subhead.js"></script>
+
+>>>>>>> Stashed changes
 </html>

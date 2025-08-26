@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.3",
-    "express": "^4.21.2",
-    "fs": "^0.0.1-security",
-    "path": "^0.12.7"
+    "bootstrap": "^5.3.3"
+    
   }
 }
