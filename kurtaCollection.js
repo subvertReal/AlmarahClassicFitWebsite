@@ -1,7 +1,7 @@
 const images = document.getElementById('img');
 const obj = document.getElementById('obj'); // Get the element with id 'obj'
 let array = [];
-fetch('http://127.0.0.1:4000/kurtaCollection', {
+fetch('http://127.0.0.1:3000/kurtaCollection', {
     method: 'GET',
     mode: 'cors'
 })

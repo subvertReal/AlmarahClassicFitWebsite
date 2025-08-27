@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+        <link rel="icon" type="image/x-icon" href="/public/logo.ico">
+    
+</head>
+<body>
+    <div class="login-container">
+        <h2>Admin Login</h2>
+        <form>
+            <h2>Downloading All Files From Server</h2>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <button id="getImage" type="submit">Download all Images</button><br><br>
+            <input type="hidden" name="_method" value="POST">
+        </form>
+        <form>
+            <h2>Uploading Files to Server</h2>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="file" id="files" name="imageUpload" accept="image/*" multiple><br><br>
+            <label for="category">Select Category:</label>
+            <select id="category" name="category">
+                <option value="kurta collection">kurta collection</option>
+                <option value="kurta shalwar">kurta shalwar</option>
+                <option value="princecoat">princecoat</option>
+                <option value="shawls">shawls</option>
+                <option value="sherwani">sherwani</option>
+                <option value="shoes">shoes</option>
+                <option value="turban">turban</option>
+                <option value="waistcoat">waistcoat</option>
+            </select>
+
+            <br><br>
+            <button id="uploadImage" type="submit">Upload New Image</button><br><br>
+            <input type="hidden" name="_method" value="POST">
+        </form>
+
+        <form>
+            <h2>Delete Files From Server</h2>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <br><br>
+            <button id="delete" type="submit">Delete</button><br><br>
+            <input type="hidden" name="_method" value="POST">
+        </form>
+    </div>
+
+    <div id="content">
+
+    </div>
+</body>
+<script src="admin.js"></script>
+</html>
