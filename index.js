@@ -24,3 +24,29 @@ btn.addEventListener('click', function() {
     window.open('https://wa.me/+19054974684', '_blank');
 });
 
+const isMobi = window.innerWidth <= 768;
+        if (isMobi) {
+            console.log('Mobile resolution detected');
+                    
+        // Post one image in id 'test'
+        const mobileResolution = document.getElementById('img1');
+        const mobileResolution2 = document.getElementById('img2');
+
+
+        console.log(mobileResolution);
+
+        mobileResolution.classList.remove('imgOption');
+        mobileResolution.classList.add('imgOptionMob');
+
+  
+
+        mobileResolution2.classList.remove('imgOption');
+        mobileResolution2.classList.add('imgOptionMob');
+        
+        document.getElementById('clickableNavDesktopTitle').style.display='none';
+        document.getElementById('clicableNavDesktop').style.display='none';
+
+        }
+
+        
+            

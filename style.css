@@ -164,10 +164,12 @@ body {
 }
 
 .mainImg {
-    width: 30rem;
+    width: 20rem;
     height: auto;
-    float: left;
-    margin-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+display: block;
+
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
@@ -178,10 +180,12 @@ body {
     border-style: solid;
 }
 .mainImgRight {
-    width: 30rem;
+    width: 20rem;
     height: auto;
-    float: right;
-    margin-right: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+display: block;
+
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
@@ -563,4 +567,30 @@ display: block;
     margin: 0 auto; float: unset; height: 200%; width: 200%; 
     background-color: #FFD700;
     z-index:1000000000000;
+}
+
+.imgOptionMob {
+    width: 20rem;
+    height: 10em;
+    float: left;
+
+    padding-right: 1em;
+
+    padding-top: 2em;
+}
+
+.lineBreak{
+    white-space: pre-line;
+}
+
+#button1{
+    background-color: var(--primary-color);
+    color: white;
+    border: white;
+}
+
+#button2{
+    background-color: var(--primary-color);
+    color: white;
+    border: white;
 }
