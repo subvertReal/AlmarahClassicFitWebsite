@@ -3,7 +3,7 @@ let api = 'https://api.almarahclassicfit.com';
 const images = document.getElementById('img');
 const obj = document.getElementById('obj'); // Get the element with id 'obj'
 let array = [];
-fetch(`${api}/shawls`, {
+fetch(`${api}/shoes`, {
     method: 'GET',
     mode: 'cors'
 })
