@@ -23,3 +23,4 @@ btn.addEventListener('click', function() {
 
     window.open('https://wa.me/+19054974684', '_blank');
 });
+

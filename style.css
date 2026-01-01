@@ -517,3 +517,50 @@ display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+.loader {
+    margin-left: auto;
+  margin-right: auto;
+    width: 96px;
+    height: 96px;
+    border: 10px solid var(--secondary-color);
+    border-bottom-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#hidden{
+    margin: 0 auto; float: unset; height: 200%; width: 200%; 
+    background-color: #FFD700;
+    z-index:1000000000000;
+}

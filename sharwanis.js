@@ -2,6 +2,9 @@ let api = 'https://api.almarahclassicfit.com';
 
 const images = document.getElementById('img');
 const obj = document.getElementById('obj'); // Get the element with id 'obj'
+const loader = document.getElementById("loader");
+
+const mobRes = document.getElementById('mobileResolution');
 let array = [];
 fetch(`${api}/sharwanis`, {
     method: 'GET',
@@ -29,6 +32,8 @@ fetch(`${api}/sharwanis`, {
                 imgElem.style.border = '5px solid white';
                 mobileResolution.appendChild(imgElem);
             });
+            loader.style.display="none";
+            mobRes.className = 'animate-bottom';
         }
 
         } else {
@@ -47,6 +52,8 @@ fetch(`${api}/sharwanis`, {
                 row.appendChild(col);
             }
             images.appendChild(row);
+            loader.style.display="none";
+            img.className = 'animate-bottom';
         }
         }
 
