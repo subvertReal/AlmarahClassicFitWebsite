@@ -1,9 +1,10 @@
 function adjustVideoPadding() {
                     var container = document.getElementById('videoContainer');
                     if (window.innerWidth < 768) {
-                        container.style.paddingBottom = "56.25%"; // 16:9 aspect ratio for mobile
+                        container.style.paddingBottom = "0"; 
                     } else {
-                        container.style.paddingBottom = "30%"; // original aspect ratio for desktop
+                        container.style.paddingBottom = "0%"; 
+                        container.classList.add('vidContained');
                     }
                 }
                 window.addEventListener('resize', adjustVideoPadding);
@@ -17,12 +18,12 @@ btn.addEventListener('click', function() {
 });
 
 
-var btn = document.getElementById('button2');
+// var btn = document.getElementById('button2');
 
-btn.addEventListener('click', function() {
+// btn.addEventListener('click', function() {
 
-    window.open('https://wa.me/+19054974684', '_blank');
-});
+//     window.open('https://wa.me/+19054974684', '_blank');
+// });
 
 const isMobi = window.innerWidth <= 768;
         if (isMobi) {

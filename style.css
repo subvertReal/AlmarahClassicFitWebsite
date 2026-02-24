@@ -1,16 +1,34 @@
 @font-face {
     font-family: 'Vivaldi';
+    src: url(/public/Vivaldi.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* @font-face {
+    font-family: 'Vivaldi';
     src: url(/public/Vivaldi.woff2) format('woff2'),
         url(/public/Vivaldi.woff) format('woff'),
         url(/public/Vivaldi.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 .sherwani{
     width: 20em;
     height: auto;
+}
+
+.navImg {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navImg:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .outer-container{
@@ -26,7 +44,7 @@
     
     --primary-color: #302c2c;
     --secondary-color: aliceblue;
-    --font-family: 'Vivaldi', Arial, sans-serif;
+    --font-family-vivaldi: 'Vivaldi', Arial, sans-serif;
 }
 
 /*Social Media*/
@@ -41,12 +59,7 @@
     z-index: 9999; /* Ensure it appears on top of other elements */
 }
 
-@keyframes fade-up {
-    100% {
-        bottom: 24px;
-        opacity: 1;
-    }
-}
+
 
 .whatsapp-btn-container .whatsapp-btn {
     font-size: 48px;
@@ -157,7 +170,7 @@ body {
 }
 #headText {
 
-    font-family: 'Vivaldi';
+    font-family: var(--font-family-vivaldi);
     color: var(--primary-color);
 
     background-color: #ffffff;
@@ -215,6 +228,19 @@ height: auto;
     padding-right: 1em;
 }
 
+.vidContained{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    aspect-ratio:16/9;
+}
+
+#videoContainer iframe{
+    width:100%;
+    height:100%;
+    border:none;
+}
+
 body {
 
     overflow-x: hidden; /* Hide horizontal scrollbar */
@@ -223,14 +249,14 @@ body {
 
 
 #h1Head{
-    font-family: Vivaldi;
+    font-family: var(--font-family-vivaldi);
     text-align: center;
     font-size: 3rem;
     
 }
 
 #mobileHead{
-    font-family: Vivaldi;
+    font-family: var(--font-family-vivaldi);;
     text-align: center;
     font-size: 1.8rem;
     
