@@ -1,14 +1,14 @@
-function adjustVideoPadding() {
-                    var container = document.getElementById('videoContainer');
-                    if (window.innerWidth < 768) {
-                        container.style.paddingBottom = "0"; 
-                    } else {
-                        container.style.paddingBottom = "0%"; 
-                        container.classList.add('vidContained');
-                    }
-                }
-                window.addEventListener('resize', adjustVideoPadding);
-                document.addEventListener('DOMContentLoaded', adjustVideoPadding);
+// function adjustVideoPadding() {
+//                     var container = document.getElementById('videoContainer');
+//                     if (window.innerWidth < 768) {
+//                         container.style.paddingBottom = "0"; 
+//                     } else {
+//                         container.style.paddingBottom = "0%"; 
+//                         container.classList.add('vidContained');
+//                     }
+//                 }
+//                 window.addEventListener('resize', adjustVideoPadding);
+//                 document.addEventListener('DOMContentLoaded', adjustVideoPadding);
 
 var btn = document.getElementById('button1');
 
