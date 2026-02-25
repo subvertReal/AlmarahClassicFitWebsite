@@ -1,0 +1,638 @@
+@font-face {
+    font-family: 'Vivaldi';
+    src: url(/public/Vivaldi.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+/* @font-face {
+    font-family: 'Vivaldi';
+    src: url(/public/Vivaldi.woff2) format('woff2'),
+        url(/public/Vivaldi.woff) format('woff'),
+        url(/public/Vivaldi.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} */
+
+.hero{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero video{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
+.sherwani{
+    width: 20em;
+    height: auto;
+}
+
+.navImg {
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navImg:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.outer-container{
+    display: none;
+}
+
+#obj {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+:root{
+    
+    --primary-color: #302c2c;
+    --secondary-color: aliceblue;
+    --font-family-vivaldi: 'Vivaldi', Arial, sans-serif;
+}
+
+/*Social Media*/
+.whatsapp-btn-container {
+    position: fixed;
+    right: 10px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+    z-index: 9999; /* Ensure it appears on top of other elements */
+}
+
+
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
+}
+
+.whatsapp-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #075e54;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+/* Facebook */
+.facebook-btn-container {
+    position: fixed;
+    right: 60px;
+    opacity: 0;
+    bottom: -50px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+    z-index: 9999; /* Ensure it appears on top of other elements */
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.facebook-btn-container .facebook-btn {
+    font-size: 48px;
+    color: #3b5998;
+    display: inline-block;
+    transition: all 400ms;
+}
+
+.facebook-btn-container .facebook-btn:hover {
+    transform: scale(1.2);
+}
+
+.facebook-btn-container span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    color: #3b5998;
+    transform: rotateZ(20deg) translateX(10px);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+.facebook-btn-container .facebook-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1;
+}
+
+
+/*Social Media End*/
+
+#para{
+    padding-left: 2em;
+  padding-right: 2em;
+}
+
+
+
+#body2{
+    background-image: url("/public/bodyBackground.webp");
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+#alsobody2{
+
+    padding-bottom: 1em;
+    font-size: 1.5em;
+}
+
+
+
+.my-float{
+	margin-top:16px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+#headText {
+
+    font-family: var(--font-family-vivaldi);
+    color: var(--primary-color);
+
+    background-color: #ffffff;
+}
+
+.mainImg {
+    width: 20rem;
+    height: auto;
+  margin-left: auto;
+  margin-right: auto;
+display: block;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+
+.borderNav {
+    border: var(--primary-color) 1px;
+    border-style: solid;
+}
+.mainImgRight {
+    width: 20rem;
+    height: auto;
+  margin-left: auto;
+  margin-right: auto;
+display: block;
+
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+}
+.imgOption {
+    width: 20rem;
+    height: auto;
+    float: left;
+
+    padding-right: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+#storePage {
+width: 100%;
+height: auto;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+.h2ImgRight{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    padding-right: 1em;
+}
+
+/* .vidContained{
+    width:100%;
+    max-width:900px;
+    margin:auto;
+    aspect-ratio:16/9;
+}
+
+#videoContainer iframe{
+    width:100%;
+    height:100%;
+    border:none;
+} */
+
+body {
+
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+
+
+#h1Head{
+    font-family: var(--font-family-vivaldi);
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+#mobileHead{
+    font-family: var(--font-family-vivaldi);;
+    text-align: center;
+    font-size: 1.8rem;
+    
+}
+
+.mobileNav{
+    font-size: 2em;
+}
+
+.mobileNavBody{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+.h2Head{
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#firstTab {
+    border-left: 2px;
+    border-style: solid;
+    border-color: white;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+
+.chat{
+    padding-top: 1em;
+    margin-top: 4em;
+
+    margin-left: 10em;
+    margin-right: 10em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+  justify-content: center;
+}
+
+h4 {
+
+    font-size: 0.7em;
+    font-family: "Playfair Display", serif;
+}
+
+
+.optionBox {
+    border: #302c2c 0.5px;
+    border-style: solid;
+    
+    margin-left: 20em;
+    margin-right: 20em;
+} 
+
+.wrap{
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap */
+    align-items: center;
+    justify-content: center;
+}
+
+.paddingLeft{
+    padding-left: 1em;
+}
+
+.constult{
+    margin-left: 2em;
+    margin-right: 2em;
+    background-color: white;
+    display: flex;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+
+
+}
+
+.headOptionBox{
+    
+    font-size: 1.2em;
+    text-align: start;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+
+}
+
+.boxPadding {
+    padding: 2rem;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.chatCont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bodyHead {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#collagePhoto {
+    width: 25rem;
+    height: auto;
+
+}
+
+
+.nav-link{
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--primary-color);
+    
+    border-right: 2px;
+    border-style: solid;
+    border-color: white;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+#tabs {
+    background-color: var(--primary-color);
+    padding: 1em;
+    
+}
+
+#head2 {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+
+#storeGif{
+    width: 60%;
+    padding-bottom: 1rem;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.colMobile {
+
+
+    margin-bottom: 1em;
+
+}
+
+.card {
+    width: 20em;
+    
+}
+.phoneCard {
+    width: 14em;
+
+}
+
+.container1{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+
+#head2{
+    border: 0px;
+    margin: 1em;
+    margin: 1em;
+    padding-bottom: 2px;
+}
+
+#subHead1 {
+    font-size: 2.5em;
+    font-family: "Playfair Display", serif;
+}
+
+.subHead1 {
+    font-size: 4em;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.subHeadMobile {
+    font-size: 2em;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+    
+}
+
+#subHead2 {
+    font-family: "Playfair Display", serif;
+}
+
+#body1 {
+     margin-left: 2em;
+    margin-right: 2em; 
+    font-size: 1.5em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Other Tabs on Hover*/
+#head2:hover{
+    border-bottom: 2px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    padding-bottom: 1px;
+}
+
+
+
+/* Media query for phone */
+@media only screen and (max-width: 600px) {
+.nav-link{
+    font-size: 0.5em;
+}
+.optionBox{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.imgOption{
+    width: 5rem;
+}
+
+
+
+}
+
+/* Media query for tablet */
+@media only screen and (min-width: 601px) and (max-width: 1315px) {
+    .optionBox{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+#titlePadding{
+    padding-left: 1em;
+}
+
+.mapMobile{
+    width: 20em;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.btnCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mapBtnMobile{
+    font-size: 3em;
+
+  font-family: "Playfair Display", serif;
+
+    background-color: var(--primary-color);
+    color: white;
+
+    border: none;
+  
+  padding: 15px 32px;
+
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.mapDesktop{
+    width: 100em;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loader {
+    margin-left: auto;
+  margin-right: auto;
+    width: 96px;
+    height: 96px;
+    border: 10px solid var(--secondary-color);
+    border-bottom-color: var(--primary-color);
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#hidden{
+    margin: 0 auto; float: unset; height: 200%; width: 200%; 
+    background-color: #FFD700;
+    z-index:1000000000000;
+}
+
+.imgOptionMob {
+    width: 20rem;
+    height: 10em;
+    float: left;
+
+    padding-right: 1em;
+
+    padding-top: 2em;
+}
+
+.lineBreak{
+    white-space: pre-line;
+}
+
+#button1{
+    background-color: var(--primary-color);
+    color: white;
+    border: white;
+}
+
+#button2{
+    background-color: var(--primary-color);
+    color: white;
+    border: white;
+}
