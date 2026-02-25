@@ -15,6 +15,22 @@
     font-display: swap;
 } */
 
+.hero{
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero video{
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+}
+
 .sherwani{
     width: 20em;
     height: auto;
